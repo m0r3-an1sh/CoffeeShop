@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="dist/jquery-parallax.js"></script>
+    <link type="text/css" rel="stylesheet" href="dist/image-marquee.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      background: #333;
+    }
+    img {
+      max-width: 400px !important;
+      display: block;
+      position: absolute;
+      top: 200px;
+      left: 200px;
+    }
+    img:nth-child(1) {
+      top: 70px;
+      left: 200px;
+    }
+    img:nth-child(2) {
+      top: 200px;
+      left: 400px;
+    }
+    img:nth-child(3) {
+      top: 200px;
+      left: 100px;
+    }
+    img:nth-child(4) {
+      top: 400px;
+      left: 600px;
+    }
+    img:nth-child(5) {
+      top: 500px;
+      left: 150px;
+    }
+    img:nth-child(6) {
+      top: 600px;
+      left: 400px;
+    }
+    img:nth-child(7) {
+      top: 800px;
+      left: 100px;
+    }
+    img:nth-child(8) {
+      top: 800px;
+      left: 600px;
+    }
+    img:nth-child(9) {
+      top: 1000px;
+      left: 300px;
+    }
+    body {
+      padding-bottom: 400px;
+    }
+  </style>
+  <body>
+    <div class="container-fluid p-0" style="z-index: 100">
+      <nav
+        class="navbar navbar-dark navbar-expand-lg bg-dark ps-3 py-3 border-2 border-top border-bottom"
+      >
+        <a class="navbar-brand" href="#/!">Coffee Shop</a>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Coffee.html"
+                >Coffee</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-8">
+          <img src="10.jpg" class="img-thumbnail" />
+          <img src="11.jpg" class="img-thumbnail" />
+          <img src="12.jpg" class="img-thumbnail" />
+          <img src="13.jpg" class="img-thumbnail" />
+          <img src="14.jpg" class="img-thumbnail" />
+          <img src="15.jpg" class="img-thumbnail" />
+          <img src="16.jpg" class="img-thumbnail" />
+          <img src="17.jpg" class="img-thumbnail" />
+          <img src="18.jpg" class="img-thumbnail" />
+        </div>
+        <div
+          class="col-4 text-light d-flex justify-content-center"
+          style="padding-top: 200px"
+        >
+          <p class="text-uppercase fs-3">
+            This is to appreciate our efforts of doing the projects. A little hall of fame for
+            us!!! This project was created by Anish More 4821
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var data = [
+      { speed: 30, blur: 3, scale: 0.8 },
+      { speed: 40, index: 2 },
+      { speed: 30, scale: 0.7 },
+      { speed: 60, index: 2 },
+      { speed: 20, blur: 3, scale: 0.5 },
+      { speed: 30, index: 2 },
+      { speed: 50 },
+      { speed: 30, index: 2, scale: 0.5 },
+    ];
+    $("img").each(function (i, o) {
+      $(this).parallax(data[i]);
+    });
+  </script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-1VDDWMRSTH");
+  </script>
+</html>
